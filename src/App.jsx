@@ -4,8 +4,8 @@ import Profile from './components/Profile/Profile'
 import FriendsList from './components/FriendList/FriendsList'
 import Transaction from './components/Transaction/Transaction';
 
-import friends from "../../friends.json";
-import transactions from "../../transactions.json";
+import friends from "./friends.json";
+import transactions from "./transactions.json";
 
 function App() {
 
