@@ -13,7 +13,7 @@ function App() {
     <>
       <Profile user={user} />
       <FriendsList friends={friends} />
-      <Transaction transactions={transactions} />
+      <Transaction items={transactions} />
     </>
   )
 }

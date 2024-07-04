@@ -1,7 +1,6 @@
 import css from "./Transaction.module.css";
-import transactions from "../../transactions.json";
 
-const Transaction = () => {
+const Transaction = (items) => {
     return (
         <>
         <table className={css.table}>
@@ -20,7 +19,7 @@ const Transaction = () => {
             </thead>
 
             <tbody>
-                {transactions.map((item) => {
+                {items.map((item) => {
                     return (
                         <tr key={item.id} className={css.tr}>
                         <td className={css.tdType}>{item.type}</td>

@@ -1,12 +1,12 @@
 import css from "./FriendCard.module.css"
 
-const FriendCard = ({ item: { avatar, name, isOnline }}) => {
+const FriendCard = (friend) => {
     return (
         <>
             <div className={css.container}>
-                <img className={css.img} src={avatar} alt="" />
-                <p className={css.name}>{name}</p>
-                <p className={isOnline ? css.online : css.offline}>{isOnline ? "Online" : "Offline"}</p>
+                <img className={css.img} src={friend.avatar} alt="" />
+                <p className={css.name}>{friend.name}</p>
+                <p className={friend.isOnline ? css.online : css.offline}>{friend.isOnline ? "Online" : "Offline"}</p>
             </div>
         </>
     )
