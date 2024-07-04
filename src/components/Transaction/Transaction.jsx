@@ -1,5 +1,5 @@
 import css from "./Transaction.module.css";
-import items from "../../transactions.json";
+import transactions from "../../transactions.json";
 
 const Transaction = () => {
     return (
@@ -20,7 +20,7 @@ const Transaction = () => {
             </thead>
 
             <tbody>
-                {items.map((item) => {
+                {transactions.map((item) => {
                     return (
                         <tr key={item.id} className={css.tr}>
                         <td className={css.tdType}>{item.type}</td>

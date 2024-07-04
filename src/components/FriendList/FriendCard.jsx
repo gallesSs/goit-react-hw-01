@@ -1,6 +1,6 @@
 import css from "./FriendCard.module.css"
 
-const FriendCard = ({ avatar, name, isOnline }) => {
+const FriendCard = ({ item: { avatar, name, isOnline }}) => {
     return (
         <>
             <div className={css.container}>
