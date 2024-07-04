@@ -1,6 +1,6 @@
-import css from "./Transaction.module.css";
+import css from "./TransactionHistory.module.css";
 
-const Transaction = (items) => {
+const TransactionHistory = ({items}) => {
     return (
         <>
         <table className={css.table}>
@@ -34,4 +34,4 @@ const Transaction = (items) => {
     )
 }
 
-export default Transaction;
+export default TransactionHistory;

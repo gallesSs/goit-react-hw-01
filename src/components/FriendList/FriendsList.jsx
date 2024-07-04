@@ -1,7 +1,7 @@
 import css from "./FriendsList.module.css";
 import FriendCard from "./FriendCard";
 
-const FriendsList = (items) => {
+const FriendsList = ({items}) => {
     return (
         <ul className={css.list}>
             {items.map((item) => {
