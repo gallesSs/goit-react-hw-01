@@ -6,7 +6,7 @@ const FriendsList = ({items}) => {
         <ul className={css.list}>
             {items.map((item) => {
                 <li key={item.id}>
-                return <FriendCard />
+                 <FriendCard friend={item} />
                 </li>
             })}
         </ul>
